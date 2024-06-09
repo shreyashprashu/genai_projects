@@ -1,5 +1,10 @@
 print("python3.8 is running")
-OPENAI_API_KEY = ""
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 OPENAI_VERSION = "gpt-3.5-turbo"  # You can choose 'gpt-4' or 'gpt-3.5-turbo'
 
 import openai
