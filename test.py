@@ -30,3 +30,4 @@ def generate_response(input_text):
 meme_text = generate_response("hello how are you doing?")
 print(meme_text)
 
+
